@@ -75,10 +75,36 @@
 
     <script>
         let products = JSON.parse(localStorage.getItem('products')) || [
-            { id: 1, name: 'Laptop', price: 999, description: 'High-performance laptop', category: 'Electronics', image: 'https://via.placeholder.com/200' },
-            { id: 2, name: 'Phone', price: 599, description: 'Smartphone', category: 'Electronics', image: 'https://via.placeholder.com/200' },
-            { id: 3, name: 'Shoes', price: 99, description: 'Comfortable shoes', category: 'Fashion', image: 'https://via.placeholder.com/200' },
-            { id: 4, name: 'Book', price: 19, description: 'Bestseller book', category: 'Books', image: 'https://via.placeholder.com/200' }
+            { id: 1, name: 'Laptop', price: 999, description: 'High-performance laptop', category: 'Electronics', image: 'https://via.placeholder.com/200?text=Laptop' },
+            { id: 2, name: 'Phone', price: 599, description: 'Smartphone', category: 'Electronics', image: 'https://via.placeholder.com/200?text=Phone' },
+            { id: 3, name: 'Wireless Headphones', price: 149, description: 'Noise-cancelling headphones', category: 'Electronics', image: 'https://via.placeholder.com/200?text=Headphones' },
+            { id: 4, name: 'Tablet', price: 399, description: 'Portable tablet', category: 'Electronics', image: 'https://via.placeholder.com/200?text=Tablet' },
+            { id: 5, name: 'Smartwatch', price: 299, description: 'Fitness smartwatch', category: 'Electronics', image: 'https://via.placeholder.com/200?text=Smartwatch' },
+            { id: 6, name: 'Gaming Console', price: 499, description: 'Latest gaming console', category: 'Electronics', image: 'https://via.placeholder.com/200?text=Console' },
+            { id: 7, name: 'Bluetooth Speaker', price: 79, description: 'Portable speaker', category: 'Electronics', image: 'https://via.placeholder.com/200?text=Speaker' },
+            { id: 8, name: 'Camera', price: 699, description: 'Digital camera', category: 'Electronics', image: 'https://via.placeholder.com/200?text=Camera' },
+            { id: 9, name: 'Shoes', price: 99, description: 'Comfortable running shoes', category: 'Fashion', image: 'https://via.placeholder.com/200?text=Shoes' },
+            { id: 10, name: 'T-Shirt', price: 29, description: 'Cotton t-shirt', category: 'Fashion', image: 'https://via.placeholder.com/200?text=T-Shirt' },
+            { id: 11, name: 'Jeans', price: 59, description: 'Denim jeans', category: 'Fashion', image: 'https://via.placeholder.com/200?text=Jeans' },
+            { id: 12, name: 'Jacket', price: 129, description: 'Winter jacket', category: 'Fashion', image: 'https://via.placeholder.com/200?text=Jacket' },
+            { id: 13, name: 'Hat', price: 19, description: 'Baseball cap', category: 'Fashion', image: 'https://via.placeholder.com/200?text=Hat' },
+            { id: 14, name: 'Dress', price: 79, description: 'Evening dress', category: 'Fashion', image: 'https://via.placeholder.com/200?text=Dress' },
+            { id: 15, name: 'Book: Fiction Novel', price: 19, description: 'Bestselling fiction book', category: 'Books', image: 'https://via.placeholder.com/200?text=Book1' },
+            { id: 16, name: 'Book: Cookbook', price: 25, description: 'Recipes for home cooking', category: 'Books', image: 'https://via.placeholder.com/200?text=Book2' },
+            { id: 17, name: 'Book: Biography', price: 22, description: 'Inspiring biography', category: 'Books', image: 'https://via.placeholder.com/200?text=Book3' },
+            { id: 18, name: 'Book: Self-Help', price: 18, description: 'Motivational guide', category: 'Books', image: 'https://via.placeholder.com/200?text=Book4' },
+            { id: 19, name: 'Book: Mystery', price: 16, description: 'Thrilling mystery novel', category: 'Books', image: 'https://via.placeholder.com/200?text=Book5' },
+            { id: 20, name: 'Sofa', price: 899, description: 'Comfortable living room sofa', category: 'Home', image: 'https://via.placeholder.com/200?text=Sofa' },
+            { id: 21, name: 'Lamp', price: 49, description: 'Desk lamp', category: 'Home', image: 'https://via.placeholder.com/200?text=Lamp' },
+            { id: 22, name: 'Bedding Set', price: 119, description: 'Queen size bedding', category: 'Home', image: 'https://via.placeholder.com/200?text=Bedding' },
+            { id: 23, name: 'Kitchen Blender', price: 89, description: 'High-speed blender', category: 'Home', image: 'https://via.placeholder.com/200?text=Blender' },
+            { id: 24, name: 'Vacuum Cleaner', price: 199, description: 'Cordless vacuum', category: 'Home', image: 'https://via.placeholder.com/200?text=Vacuum' },
+            { id: 25, name: 'Yoga Mat', price: 39, description: 'Non-slip yoga mat', category: 'Sports', image: 'https://via.placeholder.com/200?text=Yoga+Mat' },
+            { id: 26, name: 'Dumbbells', price: 69, description: 'Set of 5kg dumbbells', category: 'Sports', image: 'https://via.placeholder.com/200?text=Dumbbells' },
+            { id: 27, name: 'Basketball', price: 29, description: 'Official size basketball', category: 'Sports', image: 'https://via.placeholder.com/200?text=Basketball' },
+            { id: 28, name: 'Shampoo', price: 12, description: 'Herbal shampoo', category: 'Beauty', image: 'https://via.placeholder.com/200?text=Shampoo' },
+            { id: 29, name: 'Lipstick', price: 15, description: 'Matte lipstick', category: 'Beauty', image: 'https://via.placeholder.com/200?text=Lipstick' },
+            { id: 30, name: 'Face Cream', price: 25, description: 'Moisturizing face cream', category: 'Beauty', image: 'https://via.placeholder.com/200?text=Cream' }
         ];
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         let users = JSON.parse(localStorage.getItem('users')) || [];
